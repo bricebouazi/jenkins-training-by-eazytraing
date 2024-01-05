@@ -12,7 +12,7 @@ pipeline {
         DOCKERHUB_PASSWORD = credentials('dockerhub_password')
         APP_NAME = "ulrich"
         STG_API_ENDPOINT = "172.28.128.140:1993"
-        STG_APP_ENDPOINT = "172.28.128.140:${PORT_EXPOSED}90"
+        STG_APP_ENDPOINT = "172.28.128.140:${PORT_EXPOSED}"
         PROD_API_ENDPOINT = "172.28.128.140:1993"
         PROD_APP_ENDPOINT = "172.28.128.140:${PORT_EXPOSED}"
         INTERNAL_PORT = "80"
@@ -25,7 +25,7 @@ pipeline {
            agent any
            steps {
               script {
-                sh 'docker build -t ${DOCKERHUB_ID}/$IMAGE_NAME:$IMAGE_TAG ./mini-projet-jenkins/'
+                sh 'docker build -t ${DOCKERHUB_ID}/$IMAGE_NAME:$IMAGE_TAG ./Mini-projet/'
               }
            }
        }
