@@ -41,5 +41,5 @@ L'objectif de ce TP est de mettre en place un serveur jenkins s'exécutant dans 
 5. Finaliser l'installatation via l'interface web de jenkins
 	:warning: Pour recupererer le mot de passe, taper la commande suivante:
 	```bash
-	docker exec -it jenkins-jenkins-1 cat /var/jenkins_home/secrets/initialAdminPassword
+	docker exec -it jenkins-training-jenkins-1 cat /var/jenkins_home/secrets/initialAdminPassword
 	```
