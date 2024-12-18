@@ -24,9 +24,9 @@ L'objectif de ce TP est de mettre en place un serveur jenkins s'exécutant dans 
 	cd jenkins
 	```
 
-4. Télécharger [le fichier](https://raw.githubusercontent.com/eazytrainingfr/jenkins-training/master/docker-compose.yml) ```docker-compose.yml```, contenu dans [ce dépot github](https://github.com/eazytrainingfr/jenkins-training.git)
+4. Télécharger [le fichier](https://github.com/eazytraining/jenkins-training/blob/master/TP1%20-%20Installation_de_%20jenkins/docker-compose.yml) ```docker-compose.yml```, contenu dans [ce dépot github](https://github.com/eazytraining/jenkins-training.git)
 	```bash 
-	wget https://raw.githubusercontent.com/eazytrainingfr/jenkins-training/master/docker-compose.yml
+	wget https://github.com/eazytraining/jenkins-training/blob/master/TP1%20-%20Installation_de_%20jenkins/docker-compose.yml
 	```
 
 3. Lancer le docker-compose
