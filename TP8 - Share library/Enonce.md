@@ -2,7 +2,7 @@
 ###### --- A faire sur Github ---
 1. Créer un nouveau repos github
     - Vous pourrez le nommer **shared-library** par exemple
-    - Dans ce repos, créer un répertoire ```vars``` qui contiendra un un fichier nommé ```slackNotifier.groovy``` et y rajouter à l'intérieur, le contenu du fichier ```sharable.groovy``` donné avec l'énoncé. Votre nouveau dépot git devrait ressembler à [celui ci](https://github.com/ulrichmonji/sharedLibrary)
+    - Dans ce repos, créer un répertoire ```vars``` qui contiendra un un fichier nommé ```slackNotifier.groovy``` et y rajouter à l'intérieur, le contenu du fichier ```sharable.groovy``` donné avec l'énoncé. Votre nouveau dépot git devrait ressembler à [celui ci](https://github.com/AnselmeG300/shared-library)
 
 ###### --- A faire sur Le serveur Jenkins ---        
 2. Aller dans **configure system**. Chercher **sharable** dans la section **Global Pipeline Libraries** (en Anglais) et cliquer sur **add**

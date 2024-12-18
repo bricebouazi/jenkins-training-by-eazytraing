@@ -5,6 +5,11 @@
 	###### Procédure:
 	- **Manage jenkins** → **Configure system** → **Docker Builder** → **renseigner la socket unix** (```unix:///var/run/docker.sock```)
 	- Tester la connectivité
+	- Si vous avez un probleme alors du test de la connectivité, celà peut etre du à la version **d'Apache HttpComponents Client 5.x API**, pour resoudre ce probleme il faut downgrade la version du à la version 5.3-1.0. Pour celà : 
+		- Allez sur la page: https://plugins.jenkins.io/apache-httpcomponents-client-5-api/releases/#version_5.3-1.0
+		- Cliquez sur la version pour telecharger
+		- Au niveau de Jenkins installez le plugin à partir du menu ***Manage Jenkins -> Plugins -> Advanced settings ***
+Plugins
 4. Définir un crédential dans Jenkins qui va représenter nos identifiants docker
 	**Manage jenkins** → **Security** → **Manage credentials** → **global** → **add credentials** → **username/password**	
 5. Créer un job **freestyle** ou utiliser celui déja existant. Ce job devra faire tout ce que faisait le job précédent, mais avec une étape supplémentaire qui est **l'envoie de l'image dans le registre dockerhub**
