@@ -7,7 +7,7 @@ services:
     image: jenkins/jenkins:2.490-jdk17
     restart: always
     ports:
-      - 80:8080
+      - 8080:8080
       - 50000:50000
     volumes:
       - <path_daemon_docker>:/usr/bin/docker
